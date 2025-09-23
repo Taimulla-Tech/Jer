@@ -25,6 +25,12 @@
       padding: 50px 20px;
     }
 
+    .header-image {
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
     header h1 {
       margin: 0;
       font-size: 3em;
@@ -96,4 +102,28 @@
       text-align: center;
       padding: 20px;
       margin-top: 60px;
+    }
+
+.gallery img {
+  width: 300px;   /* фиксированная ширина */
+  height: 200px;  /* фиксированная высота */
+  object-fit: cover; /* чтобы картинка обрезалась, но не искажалась */
+  border-radius: 10px; /* округленные углы (по желанию) */
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* легкая тень (по желанию) */
+}
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      section {
+        margin: 20px;
+        padding: 15px;
+      }
+
+      section h2 {
+        font-size: 1.5em;
+      }
     }
